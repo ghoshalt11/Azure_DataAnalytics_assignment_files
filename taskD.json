@@ -1,0 +1,83 @@
+{
+	"dataRead": 43437,
+	"dataWritten": 43437,
+	"filesRead": 1,
+	"filesWritten": 1,
+	"sourcePeakConnections": 1,
+	"sinkPeakConnections": 1,
+	"copyDuration": 12,
+	"throughput": 10.859,
+	"logFilePath": "outdata/copyactivity-logs/Copy_l59/7cfbcbc9-54c2-481f-bfd7-52b2498257b6/",
+	"errors": [],
+	"effectiveIntegrationRuntime": "AutoResolveIntegrationRuntime (East US)",
+	"usedDataIntegrationUnits": 4,
+	"billingReference": {
+		"activityType": "DataMovement",
+		"billableDuration": [
+			{
+				"meterType": "AzureIR",
+				"duration": 0.06666666666666667,
+				"unit": "DIUHours"
+			}
+		],
+		"totalBillableDuration": [
+			{
+				"meterType": "AzureIR",
+				"duration": 0.06666666666666667,
+				"unit": "DIUHours"
+			}
+		]
+	},
+	"usedParallelCopies": 1,
+	"executionDetails": [
+		{
+			"source": {
+				"type": "AzureBlobFS",
+				"region": "East US"
+			},
+			"sink": {
+				"type": "AzureBlobFS",
+				"region": "East US"
+			},
+			"status": "Succeeded",
+			"start": "9/6/2025, 9:17:52 PM",
+			"duration": 12,
+			"usedDataIntegrationUnits": 4,
+			"usedParallelCopies": 1,
+			"profile": {
+				"queue": {
+					"status": "Completed",
+					"duration": 7
+				},
+				"transfer": {
+					"status": "Completed",
+					"duration": 4,
+					"details": {
+						"listingSource": {
+							"type": "AzureBlobFS",
+							"workingDuration": 0
+						},
+						"readingFromSource": {
+							"type": "AzureBlobFS",
+							"workingDuration": 0
+						},
+						"writingToSink": {
+							"type": "AzureBlobFS",
+							"workingDuration": 0
+						}
+					}
+				}
+			},
+			"detailedDurations": {
+				"queuingDuration": 7,
+				"transferDuration": 4
+			}
+		}
+	],
+	"dataConsistencyVerification": {
+		"VerificationResult": "Unsupported"
+	},
+	"durationInQueue": {
+		"integrationRuntimeQueue": 0
+	}
+}
